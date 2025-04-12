@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+ //comment
 
+ 
 const Meal = () => {
   const [mealData, setMealData] = useState([]);
   const [area, setArea] = useState('Indian');
