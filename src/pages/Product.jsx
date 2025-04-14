@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
 const Product = () => {
@@ -15,7 +16,7 @@ const Product = () => {
     <div>
         <ul>
             {arr.map((data)=><div key={data.id}>
-                <li>{data.course_name}</li>
+                <li><Link to={`/product/${data.id}`}>{data.course_name}</Link></li>
             </div>)}
         </ul>
     </div>

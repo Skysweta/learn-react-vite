@@ -11,19 +11,23 @@ import About from './pages/About';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Product from './pages/Product';
-
+import Course_Detail from './pages/Course_Detail';
+import Navbar from"./components/Navbar";
 
 const App = () => {
 
   return (
     <>
+
     <Router>
+       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/team" element={<Team></Team>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/product" element={<Product></Product>}></Route>
+        <Route path="/product/:id" element={<Course_Detail></Course_Detail>}></Route>
       </Routes>
     </Router>
      
